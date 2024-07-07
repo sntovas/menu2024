@@ -312,6 +312,86 @@ const menu = [
         img: "",
         desc: ` `,
       },
+      {
+        id: 40,
+        title: "Quesadilla με μανιτάρια και καλαμπόκι",
+        category: "starters",
+        price: "6",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 41,
+        title: "Popcorn Chicken Sticks",
+        category: "starters",
+        price: "6.5",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 42,
+        title: "Chicken Salad",
+        category: "starters",
+        price: "6",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 43,
+        title: "Chicken Burger",
+        category: "main",
+        price: "8",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 44,
+        title: "Hot Dog με κρέμα roquefort",
+        category: "main",
+        price: "6.5",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 44,
+        title: "Club Sandwich με κοτόπουλο",
+        category: "main",
+        price: "7",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 44,
+        title: "BBQ Pancetta",
+        category: "main",
+        price: "7",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 45,
+        title: "Φιλετάκια κοτόπουλο",
+        category: "main",
+        price: "8",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 46,
+        title: "Grill Mix",
+        category: "main",
+        price: "17",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 47,
+        title: "Ποικιλία με λουκάνικα για μπύρα",
+        category: "main",
+        price: "11",
+        img: "",
+        desc: ` `,
+      },
   ];
 
 const sectionCenter = document.querySelector(".section-center");
@@ -350,7 +430,7 @@ window.addEventListener("DOMContentLoaded", function() {
   });
 
   // Generate subcategory buttons for food (example)
-  const foodCategories = ["Starters", "Salad", "Main"];
+  const foodCategories = ["Starters", "Main"];
   foodCategories.forEach((category) => {
     const btn = document.createElement("button");
     btn.classList.add("filter-btn");
