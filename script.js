@@ -42,7 +42,7 @@ const menu = [
       },
       {
         id: 6,
-        title: "primator 9.00% imperial lager",
+        title: "primator 9.0% imperial lager",
         category: "beers",
         price: "6/330mL",
         img: "./images/primator-imperial-21-fix.png",
@@ -80,6 +80,230 @@ const menu = [
         img: "./images/kaiser_beer_2022.png",
         desc: `Pilsner μπύρα που διαφέρει χάρη στην εξαιρετική γεύση και ποιότητά της. 5.0% `,
       },
+      {
+        id: 11,
+        title: "Whiskey απλό",
+        category: "whiskey",
+        price: "6",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 12,
+        title: "Jack Daniel's",
+        category: "whiskey",
+        price: "7",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 13,
+        title: "Jack Daniel's Honey - Tennessee Apple",
+        category: "whiskey",
+        price: "7",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 14,
+        title: "Jameson Black Barrell",
+        category: "whiskey",
+        price: "8",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 15,
+        title: "Bushmills 10yo",
+        category: "whiskey",
+        price: "8",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 16,
+        title: "Johnnie Walker Black Laber",
+        category: "whiskey",
+        price: "8",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 17,
+        title: "Dimple Golden Selection",
+        category: "whiskey",
+        price: "8",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 18,
+        title: "Chivas Regal 12yo",
+        category: "whiskey",
+        price: "8",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 19,
+        title: "Dimple 12yo",
+        category: "whiskey",
+        price: "8",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 20,
+        title: "Glenfiddich 12yo",
+        category: "whiskey",
+        price: "8",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 21,
+        title: "Glenfiddich 15yo",
+        category: "whiskey",
+        price: "10",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 22,
+        title: "Bulleit Rye",
+        category: "whiskey",
+        price: "8",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 23,
+        title: "Wild Turkey 8yo Bourbon",
+        category: "whiskey",
+        price: "8",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 24,
+        title: "Beefeater",
+        category: "gin",
+        price: "6",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 25,
+        title: "Tanqueray",
+        category: "gin",
+        price: "7",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 26,
+        title: "Bombay Sapphire",
+        category: "gin",
+        price: "7",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 25,
+        title: "Bulldog",
+        category: "gin",
+        price: "8",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 25,
+        title: "Hendrick's",
+        category: "gin",
+        price: "9",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 26,
+        title: "Bacardi Carta Blanca",
+        category: "rum",
+        price: "6",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 27,
+        title: "Havana Club",
+        category: "rum",
+        price: "6",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 28,
+        title: "Havana Club Anejo Reserva",
+        category: "rum",
+        price: "7",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 29,
+        title: "Diplomatico Reserva Exclusiva",
+        category: "rum",
+        price: "9",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 30,
+        title: "Wyborowa",
+        category: "vodka",
+        price: "6",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 31,
+        title: "Absolut",
+        category: "vodka",
+        price: "6",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 32,
+        title: "Stoli",
+        category: "vodka",
+        price: "6",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 33,
+        title: "Grey Goose",
+        category: "vodka",
+        price: "10",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 34,
+        title: "Belvedere",
+        category: "vodka",
+        price: "10",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 35,
+        title: "Hennessy",
+        category: "cognac",
+        price: "10",
+        img: "",
+        desc: ` `,
+      },
   ];
 
 const sectionCenter = document.querySelector(".section-center");
@@ -93,6 +317,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
 function displayMenuItems(menuItems) {
     let displayMenu = menuItems.map(function(item) {
+      if(item.category === "beers") {
         return `<article class="menu-item">
                     <img src=${item.img} class="photo" alt=${item.title}>
                     <div class="item-info">
@@ -103,6 +328,62 @@ function displayMenuItems(menuItems) {
                         <p class="item-text">${item.desc}</p>
                     </div>
                 </article>`;
+      }
+      else if(item.category === "whiskey"){
+        return `<article class="menu-item">
+                    <div class="item-info">
+                        <header>
+                            <h4>${item.title}</h4>
+                            <h4 class="price">${item.price}</h4>
+                        </header>
+                        <p class="item-text">${item.desc}</p>
+                    </div>
+                </article>`
+      }
+      else if(item.category === "gin"){
+        return `<article class="menu-item">
+                    <div class="item-info">
+                        <header>
+                            <h4>${item.title}</h4>
+                            <h4 class="price">${item.price}</h4>
+                        </header>
+                        <p class="item-text">${item.desc}</p>
+                    </div>
+                </article>`
+      }
+      else if(item.category === "rum"){
+        return `<article class="menu-item">
+                    <div class="item-info">
+                        <header>
+                            <h4>${item.title}</h4>
+                            <h4 class="price">${item.price}</h4>
+                        </header>
+                        <p class="item-text">${item.desc}</p>
+                    </div>
+                </article>`
+      }
+      else if(item.category === "vodka"){
+        return `<article class="menu-item">
+                    <div class="item-info">
+                        <header>
+                            <h4>${item.title}</h4>
+                            <h4 class="price">${item.price}</h4>
+                        </header>
+                        <p class="item-text">${item.desc}</p>
+                    </div>
+                </article>`
+      }
+      else if(item.category === "cognac"){
+        return `<article class="menu-item">
+                    <div class="item-info">
+                        <header>
+                            <h4>${item.title}</h4>
+                            <h4 class="price">${item.price}</h4>
+                        </header>
+                        <p class="item-text">${item.desc}</p>
+                    </div>
+                </article>`
+      }
     });
     displayMenu = displayMenu.join("");
     sectionCenter.innerHTML = displayMenu;
@@ -114,7 +395,7 @@ function displayMenuButtons() {
             values.push(item.category);
         }
         return values;
-    }, ["all"]);
+    }, []);
     const categoryBtns = categories.map(function(category) {
         return `<button class="filter-btn" type="button" data-id=${category}>${category}</button>`;
     }).join("");
