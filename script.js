@@ -319,9 +319,58 @@ const container = document.querySelector(".btn-container");
 
 // load items
 window.addEventListener("DOMContentLoaded", function() {
-    displayMenuItems(menu);
-    displayMenuButtons();    
+  const drinksBtn = document.querySelector('button[data-category="drinks"]');
+  const foodBtn = document.querySelector('button[data-category="food"]');
+  const drinksSubcategories = document.querySelector(".drinks-subcategories");
+  const foodSubcategories = document.querySelector(".food-subcategories");
+
+  drinksBtn.addEventListener("click", () => {
+    drinksSubcategories.style.display =
+      drinksSubcategories.style.display === "none" ? "block" : "none";
+    foodSubcategories.style.display = "none";
+  });
+
+  foodBtn.addEventListener("click", () => {
+    foodSubcategories.style.display =
+      foodSubcategories.style.display === "none" ? "block" : "none";
+    drinksSubcategories.style.display = "none";
+  });
+
+  // Generate subcategory buttons for drinks
+  const drinksCategories = ["Beers", "Whiskey", "Rum", "Gin", "Cognac"];
+  drinksCategories.forEach((category) => {
+    const btn = document.createElement("button");
+    btn.classList.add("filter-btn");
+    btn.setAttribute("data-category", category.toLowerCase());
+    btn.textContent = category;
+    btn.addEventListener("click", (e) => {
+      filterMenuItems(e.currentTarget.dataset.category);
+    });
+    drinksSubcategories.appendChild(btn);
+  });
+
+  // Generate subcategory buttons for food (example)
+  const foodCategories = ["Appetizers", "Main Course", "Desserts"];
+  foodCategories.forEach((category) => {
+    const btn = document.createElement("button");
+    btn.classList.add("filter-btn");
+    btn.setAttribute("data-category", category.toLowerCase());
+    btn.textContent = category;
+    btn.addEventListener("click", (e) => {
+      filterMenuItems(e.currentTarget.dataset.category);
+    });
+    foodSubcategories.appendChild(btn);
+  });
+
+  const filterMenuItems = (category) => {
+    const menuItems = menu.filter((item) => item.category === category);
+    displayMenuItems(menuItems);
+  };
+
+  displayMenuItems(menu);
 });
+
+  //displayMenuButtons();    
 
 function displayMenuItems(menuItems) {
     let displayMenu = menuItems.map(function(item) {
