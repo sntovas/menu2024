@@ -98,7 +98,7 @@ const menu = [
       },
       {
         id: 13,
-        title: "Jack Daniel's Honey - Tennessee Apple",
+        title: "Jack Daniel's Honey",
         category: "whiskey",
         price: "7",
         img: "",
@@ -106,6 +106,14 @@ const menu = [
       },
       {
         id: 14,
+        title: "Jack Daniel's Tennessee Apple",
+        category: "whiskey",
+        price: "7",
+        img: "",
+        desc: ` `,
+      },
+      {
+        id: 15,
         title: "Jameson Black Barrell",
         category: "whiskey",
         price: "8",
@@ -113,7 +121,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 15,
+        id: 16,
         title: "Bushmills 10yo",
         category: "whiskey",
         price: "8",
@@ -121,7 +129,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 16,
+        id: 17,
         title: "Johnnie Walker Black Laber",
         category: "whiskey",
         price: "8",
@@ -129,7 +137,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 17,
+        id: 18,
         title: "Dimple Golden Selection",
         category: "whiskey",
         price: "8",
@@ -137,7 +145,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 18,
+        id: 19,
         title: "Chivas Regal 12yo",
         category: "whiskey",
         price: "8",
@@ -145,7 +153,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 19,
+        id: 20,
         title: "Dimple 12yo",
         category: "whiskey",
         price: "8",
@@ -153,7 +161,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 20,
+        id: 21,
         title: "Glenfiddich 12yo",
         category: "whiskey",
         price: "8",
@@ -161,7 +169,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 21,
+        id: 22,
         title: "Glenfiddich 15yo",
         category: "whiskey",
         price: "10",
@@ -169,7 +177,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 22,
+        id: 23,
         title: "Bulleit Rye",
         category: "whiskey",
         price: "8",
@@ -177,7 +185,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 23,
+        id: 24,
         title: "Wild Turkey 8yo Bourbon",
         category: "whiskey",
         price: "8",
@@ -185,7 +193,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 24,
+        id: 25,
         title: "Beefeater",
         category: "gin",
         price: "6",
@@ -193,7 +201,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 25,
+        id: 26,
         title: "Tanqueray",
         category: "gin",
         price: "7",
@@ -201,7 +209,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 26,
+        id: 27,
         title: "Bombay Sapphire",
         category: "gin",
         price: "7",
@@ -209,7 +217,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 25,
+        id: 28,
         title: "Bulldog",
         category: "gin",
         price: "8",
@@ -217,7 +225,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 25,
+        id: 29,
         title: "Hendrick's",
         category: "gin",
         price: "9",
@@ -225,7 +233,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 26,
+        id: 30,
         title: "Bacardi Carta Blanca",
         category: "rum",
         price: "6",
@@ -233,7 +241,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 27,
+        id: 31,
         title: "Havana Club",
         category: "rum",
         price: "6",
@@ -241,7 +249,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 28,
+        id: 32,
         title: "Havana Club Anejo Reserva",
         category: "rum",
         price: "7",
@@ -249,7 +257,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 29,
+        id: 33,
         title: "Diplomatico Reserva Exclusiva",
         category: "rum",
         price: "9",
@@ -257,7 +265,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 30,
+        id: 34,
         title: "Wyborowa",
         category: "vodka",
         price: "6",
@@ -265,7 +273,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 31,
+        id: 35,
         title: "Absolut",
         category: "vodka",
         price: "6",
@@ -273,7 +281,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 32,
+        id: 36,
         title: "Stoli",
         category: "vodka",
         price: "6",
@@ -281,7 +289,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 33,
+        id: 37,
         title: "Grey Goose",
         category: "vodka",
         price: "10",
@@ -289,7 +297,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 34,
+        id: 38,
         title: "Belvedere",
         category: "vodka",
         price: "10",
@@ -297,7 +305,7 @@ const menu = [
         desc: ` `,
       },
       {
-        id: 35,
+        id: 39,
         title: "Hennessy",
         category: "cognac",
         price: "10",
