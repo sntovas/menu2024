@@ -130,7 +130,7 @@ const menu = [
       },
       {
         id: 17,
-        title: "Johnnie Walker Black Laber",
+        title: "Johnnie Walker Black Label",
         category: "whiskey",
         price: "8",
         img: "",
