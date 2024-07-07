@@ -317,7 +317,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
 function displayMenuItems(menuItems) {
     let displayMenu = menuItems.map(function(item) {
-      if(item.category === "beers") {
+      /* if(item.category === "beers") {
         return `<article class="menu-item">
                     <img src=${item.img} class="photo" alt=${item.title}>
                     <div class="item-info">
@@ -333,7 +333,7 @@ function displayMenuItems(menuItems) {
         return `<article class="menu-item">
                     <div class="item-info">
                         <header>
-                            <h4>${item.title}</h4>
+                            <h4 class="title">${item.title}</h4>
                             <h4 class="price">${item.price}</h4>
                         </header>
                         <p class="item-text">${item.desc}</p>
@@ -344,7 +344,7 @@ function displayMenuItems(menuItems) {
         return `<article class="menu-item">
                     <div class="item-info">
                         <header>
-                            <h4>${item.title}</h4>
+                            <h4 class="title">${item.title}</h4>
                             <h4 class="price">${item.price}</h4>
                         </header>
                         <p class="item-text">${item.desc}</p>
@@ -355,7 +355,7 @@ function displayMenuItems(menuItems) {
         return `<article class="menu-item">
                     <div class="item-info">
                         <header>
-                            <h4>${item.title}</h4>
+                            <h4 class="title">${item.title}</h4>
                             <h4 class="price">${item.price}</h4>
                         </header>
                         <p class="item-text">${item.desc}</p>
@@ -366,7 +366,7 @@ function displayMenuItems(menuItems) {
         return `<article class="menu-item">
                     <div class="item-info">
                         <header>
-                            <h4>${item.title}</h4>
+                            <h4 class="title">${item.title}</h4>
                             <h4 class="price">${item.price}</h4>
                         </header>
                         <p class="item-text">${item.desc}</p>
@@ -377,13 +377,23 @@ function displayMenuItems(menuItems) {
         return `<article class="menu-item">
                     <div class="item-info">
                         <header>
-                            <h4>${item.title}</h4>
+                            <h4 class="title">${item.title}</h4>
                             <h4 class="price">${item.price}</h4>
                         </header>
                         <p class="item-text">${item.desc}</p>
                     </div>
                 </article>`
-      }
+      } */
+      return `<article class="menu-item">
+              ${item.img ? `<img src=${item.img} alt=${item.title} class="photo" />` : ""}
+              <div class="item-info">
+                <header>
+                  <h4 class="title">${item.title}</h4>
+                  <h4 class="price">${item.price}</h4>
+                </header>
+                <p class="item-text">${item.desc}</p>
+              </div>
+            </article>`;
     });
     displayMenu = displayMenu.join("");
     sectionCenter.innerHTML = displayMenu;
