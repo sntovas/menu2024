@@ -114,7 +114,7 @@ const menu = [
       },
       {
         id: 15,
-        title: "Jameson Black Barrell",
+        title: "Jameson Black Barrel",
         category: "whiskey",
         price: "8",
         img: "",
