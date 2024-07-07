@@ -325,15 +325,15 @@ window.addEventListener("DOMContentLoaded", function() {
   const foodSubcategories = document.querySelector(".food-subcategories");
 
   drinksBtn.addEventListener("click", () => {
-    drinksSubcategories.style.display =
-      drinksSubcategories.style.display === "none" ? "block" : "none";
-    foodSubcategories.style.display = "none";
+
+    drinksSubcategories.classList.toggle("show");
+    foodSubcategories.classList.remove("show");
   });
 
   foodBtn.addEventListener("click", () => {
-    foodSubcategories.style.display =
-      foodSubcategories.style.display === "none" ? "block" : "none";
-    drinksSubcategories.style.display = "none";
+
+    foodSubcategories.classList.toggle("show");
+    drinksSubcategories.classList.remove("show");
   });
 
   // Generate subcategory buttons for drinks
@@ -350,7 +350,7 @@ window.addEventListener("DOMContentLoaded", function() {
   });
 
   // Generate subcategory buttons for food (example)
-  const foodCategories = ["Appetizers", "Main Course", "Desserts"];
+  const foodCategories = ["Starters", "Salad", "Main"];
   foodCategories.forEach((category) => {
     const btn = document.createElement("button");
     btn.classList.add("filter-btn");
@@ -366,6 +366,13 @@ window.addEventListener("DOMContentLoaded", function() {
     const menuItems = menu.filter((item) => item.category === category);
     displayMenuItems(menuItems);
   };
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest('.main-category')) {
+      drinksSubcategories.classList.remove("show");
+      foodSubcategories.classList.remove("show");
+    }
+  });
 
   displayMenuItems(menu);
 });
